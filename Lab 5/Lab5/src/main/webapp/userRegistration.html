@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>User Registration</h1>
+
+        <form action="processUser.jsp">
+            <fieldset>
+                <legend><b>User Details</b></legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="userName">Name</label></td>
+                            <td><input type="text" name="userName" id="userName" placeholder="Enter name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="userSurname">Surname</label></td>
+                            <td><input type="text" name="userSurname" id="userSurname" placeholder="Enter surname"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="userPassword">Password</label></td>
+                            <td><input type="password" name="userPassword" id="userPassword" placeholder="Max 10 characters" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input type="radio" name="userGender" id="male" value="1">
+                                <label for="male">Male</label>
+                                <input type="radio" name="userGender" id="female" value="2">
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Type of User</td>
+                            <td>
+                                <select name="userType" id="userType">
+                                    <option value="1">Beginner</option>
+                                    <option value="2">Intermediate</option>
+                                    <option value="3">Advanced</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Prefer Language</td>
+                            <td>
+                                <input type="checkbox" name="userLanguage" id="malay" value="1">
+                                <label for="malay">Malay</label>
+                                <input type="checkbox" name="userLanguage" id="english" value="2">
+                                <label for="english">English</label>
+                                <input type="checkbox" name="userLanguage" id="mandarin" value="3">
+                                <label for="mandarin">Mandarin</label>
+                                <input type="checkbox" name="userLanguage" id="tamil" value="4">
+                                <label for="tamil">Tamil</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                <button type="reset">Cancel</button>
+                                <button type="submit">Submit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
